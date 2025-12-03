@@ -44,6 +44,7 @@
             <div class="section-text">
                 <p class="section-paragraph-text">
                     I'm an 18 year old developer that started at a very young age (13) programming in C#, later transitioned to Java, then python, then the web dev stack.
+
                 </p>
             </div>
         </div>
