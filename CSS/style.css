@@ -1,0 +1,109 @@
+:root {
+    --primary: #212121;
+    --secondary: #000000;
+    --tertiary: #0081ff;
+    --accent: #ffde00;
+    --background-color: linear-gradient(to top, var(--primary), var(--secondary));
+
+    --black: #000000;
+    --white: #ffffff;
+    --light-gray: #cfcfcf;
+
+    --main-font-size: 88px;
+    --main-font-weight: 400;
+    --secondary-font-weight: 300;
+    --secondary-font-size: 48px;
+    --button-font-size: 56px;
+}
+
+body {
+    background: var(--background-color);
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    /* white grid */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 40px 40px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0) 100%);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: 3px solid var(--accent);
+    margin: 20px;
+    padding: 20px;
+}
+
+.action-button {
+    border: 3px solid var(--accent);
+    margin: 20px;
+    padding: 20px;
+}
+
+.img-logo {
+    height: 20vh;
+    border-radius: 30px;
+}
+
+.title {
+    margin: 20px 20px 0 100px;
+    border: 3px solid var(--tertiary);
+}
+
+.subtitle {
+    margin: 0 20px 20px 100px;
+    padding: 20px;
+    border: 3px solid var(--tertiary);
+}
+
+.title-text {
+    font-size: var(--main-font-size);
+    color: transparent;
+    background-image: linear-gradient(to left, var(--accent), var(--tertiary), var(--accent));
+    background-clip: text;
+    background-size: 200%;
+    animation: title-animation 5s linear infinite;
+}
+
+@keyframes title-animation {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: 200%;
+    }
+}
+
+.subtitle-text {
+    font-size: var(--secondary-font-size);
+    color: transparent;
+    background-image: linear-gradient(to left, var(--light-gray), var(--white), var(--light-gray));
+    background-clip: text;
+    background-size: 200%;
+    animation: subtitle-animation 5s linear infinite;
+}
+
+@keyframes subtitle-animation {
+    from {
+        background-position: 0;
+    }
+    to {
+        background-position: 200%;
+    }
+}
